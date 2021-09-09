@@ -1,0 +1,65 @@
+stackbitVersion: ~0.3.0
+ssgName: jekyll
+publishDir: _site
+dataDir: _data
+pagesDir: ''
+models:
+  post:
+    type: page
+    label: Post
+    folder: _posts
+    match: '*'
+    fields:
+      - type: string
+        name: title
+        label: Title
+      - type: string
+        name: author_staff_member
+        label: Author Staff Member
+      - type: date
+        name: date
+        label: Date
+      - type: string
+        name: featured_image
+        label: Featured Image
+  staff_member:
+    type: page
+    label: Staff Member
+    folder: _staff_members
+    match: '*'
+    fields:
+      - type: string
+        name: name
+        label: Name
+      - type: image
+        name: image
+        label: Image
+  company:
+    type: data
+    label: Company
+    file: company.yml
+    fields:
+      - type: string
+        name: company_name
+        label: Company Name
+      - type: string
+        name: mission_statement
+        label: Mission Statement
+      - type: string
+        name: address
+        label: Address
+      - type: string
+        name: phone
+        label: Phone
+      - type: string
+        name: email
+        label: Email
+      - type: string
+        name: facebook
+        label: Facebook
+      - type: string
+        name: twitter
+        label: Twitter
+      - type: string
+        name: youtube
+        label: Youtube
